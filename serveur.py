@@ -33,9 +33,7 @@ TYPES_HTTP = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", 
               ".svg": "image/svg+xml", ".bmp": "image/bmp", ".avif": "image/avif", ".mp4": "video/mp4", ".webm": "video/webm",
               ".mov": "video/quicktime", ".mkv": "video/x-matroska"}
 RACCOURCIS = [
-    "~/Projects/ProjetC/agents/apolline-m/persona/photos/variantes",
-    "~/Projects/ProjetC/agents/apolline-m/medias",
-    "~/Projects/ProjetC/agents/cmo/medias/brouillons",
+    "~/Projects",
     "~/Downloads",
     "~/Pictures",
     "~/Documents",

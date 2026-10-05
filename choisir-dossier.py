@@ -17,7 +17,7 @@ dlg.add_buttons("Annuler", Gtk.ResponseType.CANCEL, "Choisir", Gtk.ResponseType.
 dlg.set_current_folder(str(depart))
 dlg.set_default_size(820, 560)
 dlg.set_position(Gtk.WindowPosition.CENTER)
-for nom, chemin in (("Apolline — variantes", "~/Projects/ProjetC/agents/apolline-m/persona/photos/variantes"), ("Apolline — médias", "~/Projects/ProjetC/agents/apolline-m/medias"), ("Téléchargements", "~/Downloads"), ("Images", "~/Pictures")):
+for nom, chemin in (("Projets", "~/Projects"), ("Téléchargements", "~/Downloads"), ("Images", "~/Pictures")):
     p = Path(os.path.expanduser(chemin))
     if p.is_dir():
         try:
