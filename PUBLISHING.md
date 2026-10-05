@@ -9,4 +9,4 @@ Repris de `~/Projects/hermes-control/PUBLISHING.md` (même compte, mêmes règle
 - Dépôt : https://github.com/CryptoDjam/trieur-medias (créé avec `gh repo create`).
 
 ## Historique
-- 2026-10-05 : 0.1.0, première publication (voir le journal du Gardien pour l'état staging / approuvé).
+- 2026-10-05 : 0.1.0 publiée directement en `latest` (pas de staging cette fois : `+ trieur-medias@0.1.0`), dépôt GitHub créé et poussé, tag v0.1.0.
