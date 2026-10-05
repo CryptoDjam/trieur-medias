@@ -1,6 +1,6 @@
 {
   "name": "trieur-medias",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Trieur de médias : page locale pour trier photos et fichiers (défiler, cocher, envoyer vers un dossier, corbeille). Local media sorter: scroll, tick, move to a folder, trash — with a ComfyUI .json sidecar following its image.",
   "author": "Cyril M",
   "license": "MIT",
