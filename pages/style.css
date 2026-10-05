@@ -1,0 +1,32 @@
+:root{--fond:#14141f;--carte:#1e1e2e;--bord:#33334a;--texte:#e6e6f0;--muet:#9a9ab0;--accent:#7aa2f7;--danger:#f7768e;--ok:#9ece6a}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{background:var(--fond);color:var(--texte);font:14px/1.45 system-ui,sans-serif;display:flex;flex-direction:column;height:100vh}
+.barre{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid var(--bord);background:var(--carte)}
+.dossier{display:flex;gap:6px;align-items:center;flex:1;min-width:0}
+.dossier input{flex:1;min-width:120px;padding:6px 8px;border:1px solid var(--bord);border-radius:6px;background:var(--fond);color:var(--texte)}
+button,select{padding:6px 10px;border:1px solid var(--bord);border-radius:6px;background:var(--fond);color:var(--texte);cursor:pointer}
+button:hover{border-color:var(--accent)}button:disabled{opacity:.4;cursor:default}
+button.danger{border-color:var(--danger);color:var(--danger)}button.danger:not(:disabled):hover{background:var(--danger);color:#000}
+.actions{display:flex;gap:6px;align-items:center}.compte{color:var(--muet);margin-right:6px;white-space:nowrap}
+main{flex:1;display:flex;min-height:0}
+.bande{width:190px;overflow-y:auto;border-right:1px solid var(--bord);padding:8px;display:flex;flex-direction:column;gap:6px;background:#17172380}
+.vignette{position:relative;border:2px solid transparent;border-radius:8px;overflow:hidden;background:var(--carte);cursor:pointer;flex:none}
+.vignette.courant{border-color:var(--accent)}.vignette.coche{outline:3px solid var(--danger)}
+.vignette img{display:block;width:100%;height:120px;object-fit:cover}
+.vignette .nom{padding:4px 6px;font-size:11px;color:var(--muet);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vignette .icone{height:120px;display:flex;align-items:center;justify-content:center;font-size:36px;color:var(--muet)}
+.vignette input{position:absolute;top:6px;left:6px;width:18px;height:18px;accent-color:var(--danger)}
+.vignette.dossier{background:#2a2a40}.vignette.dossier .icone{height:48px;font-size:22px}
+.vue{flex:1;display:flex;flex-direction:column;min-width:0}
+.vue-contenu{flex:1;display:flex;align-items:center;justify-content:center;overflow:auto;padding:12px}
+.vue-contenu img,.vue-contenu video{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;box-shadow:0 8px 30px #0008}
+.vue-contenu pre{align-self:flex-start;width:100%;white-space:pre-wrap;word-break:break-word;background:var(--carte);padding:16px;border-radius:8px;font:13px/1.5 ui-monospace,monospace;max-height:100%;overflow:auto}
+.vue-contenu.coche{box-shadow:inset 0 0 0 4px var(--danger)}
+.vide{color:var(--muet)}
+.pied{display:flex;gap:16px;align-items:center;padding:8px 12px;border-top:1px solid var(--bord);background:var(--carte);font-size:13px}
+.coche-grande{display:flex;gap:8px;align-items:center;cursor:pointer}.coche-grande input{width:20px;height:20px;accent-color:var(--danger)}
+.info{color:var(--muet);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.aide{color:var(--muet);font-size:12px;white-space:nowrap}
+.confirm[hidden]{display:none}
+.confirm{position:fixed;inset:0;background:#0009;display:flex;align-items:center;justify-content:center}
+.boite{background:var(--carte);border:1px solid var(--bord);border-radius:12px;padding:20px;max-width:460px}
+.boite .note{color:var(--muet);font-size:13px}.boutons{display:flex;gap:8px;justify-content:flex-end}

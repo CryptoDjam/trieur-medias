@@ -1,0 +1,37 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trieur</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header class="barre">
+  <form id="form-dossier" class="dossier">
+    <button type="button" id="parent" title="Dossier parent">↑</button>
+    <input id="chemin" type="text" placeholder="~/Pictures" autocomplete="off" spellcheck="false">
+    <button type="button" id="ouvrir" title="Choisir un dossier">Ouvrir…</button>
+    <select id="raccourcis" title="Raccourcis"><option value="">raccourcis…</option></select>
+    <select id="filtre" title="Type de fichiers affichés"><option value="tout">tout</option><option value="image">photos</option><option value="video">vidéos</option><option value="texte">textes</option><option value="autre">autres</option></select>
+  </form>
+  <div class="actions">
+    <span id="compte" class="compte">0 fichier</span>
+    <button type="button" id="tout" title="A">Tout</button>
+    <button type="button" id="rien" title="N">Rien</button>
+    <button type="button" id="envoyer" disabled title="E">Envoyer vers…</button>
+    <button type="button" id="supprimer" class="danger" disabled title="Suppr">Supprimer la sélection</button>
+  </div>
+</header>
+<main>
+  <aside id="bande" class="bande" aria-label="Fichiers"></aside>
+  <section class="vue">
+    <div id="vue" class="vue-contenu"><p class="vide">Choisis un dossier.</p></div>
+    <footer class="pied">
+      <label class="coche-grande"><input type="checkbox" id="coche-courant"> <span>sélectionner ce fichier (Espace)</span></label>
+      <span id="info" class="info"></span>
+      <span class="aide">← → défiler · Espace cocher · A tout · N rien · E envoyer · Suppr supprimer</span>
+    </footer>
+  </section>
+</main>
+<div id="confirm" class="confirm" hidden>
+  <div class="boite">
+    <p id="confirm-texte"></p>
+    <p class="note">Les fichiers vont dans la corbeille du système (récupérables dans Fichiers → Corbeille). Le .json jumeau d'une image ComfyUI part avec.</p>
+    <div class="boutons"><button type="button" id="confirm-non">Annuler</button><button type="button" id="confirm-oui" class="danger">Supprimer</button></div>
+  </div>
+</div>
+</body></html>

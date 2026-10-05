@@ -1,0 +1,15 @@
+# Unité utilisateur systemd (modèle) : copier dans ~/.config/systemd/user/, adapter le chemin, puis
+#   systemctl --user daemon-reload && systemctl --user enable --now trieur-medias
+[Unit]
+Description=Trieur de médias sur 127.0.0.1:9170
+After=network.target
+
+[Service]
+WorkingDirectory=%h/Projects/trieur-medias
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 %h/Projects/trieur-medias/serveur.py --port 9170
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
