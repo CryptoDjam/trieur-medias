@@ -10,4 +10,4 @@ Repris de `~/Projects/hermes-control/PUBLISHING.md` (même compte, mêmes règle
 
 ## Historique
 - 2026-10-05 : 0.1.0 : `npm publish` a répondu `+ trieur-medias@0.1.0`, mais `npm view trieur-medias version` donne `0.0.0-stage` → le paquet est en **staging**, à approuver par Cyril sur npmjs.com (Staged Packages → Approve + 2FA, téléphone). Dépôt GitHub créé et poussé, tag v0.1.0.
-- 2026-10-05 : 0.1.0 passée en `latest` à 15:17 (staging approuvée). 0.1.1 (raccourcis) publiée dans la foulée.
+- 2026-10-05 : 0.1.0 passée en `latest` à 15:17 (staging approuvée). 0.1.1 (raccourcis) acceptée à 15:35 mais en staging : à approuver aussi.
