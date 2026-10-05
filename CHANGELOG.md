@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.2 — 2026-10-05
+- README and npm description in English first (French section kept).
+
 ## 0.1.1 — 2026-10-05
 - Raccourcis : Projets, Téléchargements, Images, Documents (les dossiers d'Apolline sont retirés).
 

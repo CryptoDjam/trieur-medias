@@ -1,7 +1,7 @@
 {
   "name": "trieur-medias",
-  "version": "0.1.1",
-  "description": "Trieur de médias : page locale pour trier photos et fichiers (défiler, cocher, envoyer vers un dossier, corbeille). Local media sorter: scroll, tick, move to a folder, trash — with a ComfyUI .json sidecar following its image.",
+  "version": "0.1.2",
+  "description": "Local media sorter: scroll, tick, move to a folder, trash — a ComfyUI .json sidecar follows its image. Python stdlib + plain HTML, nothing to install. (Trieur de médias : page locale pour trier photos et fichiers.)",
   "author": "Cyril M",
   "license": "MIT",
   "repository": { "type": "git", "url": "git+https://github.com/CryptoDjam/trieur-medias.git" },
