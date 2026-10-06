@@ -57,7 +57,7 @@ Open the page with `?dossier=…&fichier=…` to land on a file (the address is 
 `docs/architecture.html`: the diagram (browser ↔ server ↔ home folder / trash / GTK dialog), the "move" and "trash" flows, limits. `CHANGELOG.md` for versions, `PUBLISHING.md` to publish.
 
 ## License
-MIT — Cyril M. Code: https://github.com/CryptoDjam/trieur-medias
+MIT — Cyril M. Code: https://github.com/CyberServices-ai/trieur-medias
 
 ---
 
@@ -120,4 +120,4 @@ La page est ouverte avec `?dossier=…&fichier=…` pour arriver directement sur
 `docs/architecture.html` : le schéma (navigateur ↔ serveur ↔ dossier personnel / corbeille / boîte GTK), les flux « envoyer » et « corbeille », les limites. `CHANGELOG.md` pour les versions, `PUBLISHING.md` pour publier.
 
 ### Licence
-MIT — Cyril M. Code : https://github.com/CryptoDjam/trieur-medias
+MIT — Cyril M. Code : https://github.com/CyberServices-ai/trieur-medias

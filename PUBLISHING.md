@@ -6,7 +6,7 @@ Repris de `~/Projects/hermes-control/PUBLISHING.md` (même compte, mêmes règle
 - Nouvelle version : `version` dans `package.json`, entrée dans `CHANGELOG.md`, `git commit`, `git tag vX.Y.Z && git push --tags`, puis `npm publish`.
 - `npm pack --dry-run` avant de publier : vérifier que seuls les fichiers de `files` partent.
 - **Ne jamais dépublier** (24 h de blocage du nom) : `npm deprecate` si besoin.
-- Dépôt : https://github.com/CryptoDjam/trieur-medias (créé avec `gh repo create`).
+- Dépôt : https://github.com/CyberServices-ai/trieur-medias (créé avec `gh repo create`).
 
 ## Historique
 - 2026-10-05 : 0.1.0 : `npm publish` a répondu `+ trieur-medias@0.1.0`, mais `npm view trieur-medias version` donne `0.0.0-stage` → le paquet est en **staging**, à approuver par Cyril sur npmjs.com (Staged Packages → Approve + 2FA, téléphone). Dépôt GitHub créé et poussé, tag v0.1.0.
