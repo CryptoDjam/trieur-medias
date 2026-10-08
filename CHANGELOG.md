@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 — 2026-10-08
+- **License changed to AGPL-3.0-or-later** with a section 7(b) attribution term: the CyberServices signature frame and its « site » / « github » links must stay visible (`ADDITIONAL-TERMS.md`). Versions up to 0.1.3 remain available under MIT.
+- `NOTICE.md`: fonts (OFL) and image.
+
 ## 0.1.3 — 2026-10-08
 - CyberServices signature frame around the page (thin green border, title bar with « site » / « dashboard » links and ×), shipped in `pages/calque/`.
 - Font: **CS Coque** (derived from Tektur, SIL OFL 1.1, license and FONTLOG in `pages/polices/`).

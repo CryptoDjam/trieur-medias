@@ -60,7 +60,7 @@ Open the page with `?dossier=…&fichier=…` to land on a file (the address is 
 `docs/architecture.html`: the diagram (browser ↔ server ↔ home folder / trash / GTK dialog), the "move" and "trash" flows, limits. `CHANGELOG.md` for versions, `PUBLISHING.md` to publish.
 
 ## License
-MIT — Cyril M. Code: https://github.com/CyberServices-ai/trieur-medias
+**AGPL-3.0-or-later** — Cyril M / CyberServices, with an additional term (section 7(b)): the signature frame and its « site » / « github » links must stay visible in any interface built from this work. See `LICENSE`, `ADDITIONAL-TERMS.md`, `NOTICE.md` (fonts under OFL). Versions up to 0.1.3 remain under MIT. Code: https://github.com/CyberServices-ai/trieur-medias
 
 ---
 
@@ -123,4 +123,4 @@ La page est ouverte avec `?dossier=…&fichier=…` pour arriver directement sur
 `docs/architecture.html` : le schéma (navigateur ↔ serveur ↔ dossier personnel / corbeille / boîte GTK), les flux « envoyer » et « corbeille », les limites. `CHANGELOG.md` pour les versions, `PUBLISHING.md` pour publier.
 
 ### Licence
-MIT — Cyril M. Code : https://github.com/CyberServices-ai/trieur-medias
+AGPL-3.0 ou ultérieure — Cyril M / CyberServices, avec la condition de garder visibles le cadre-signature et ses liens « site » et « github » (voir `ADDITIONAL-TERMS.md`). Les versions jusqu'à 0.1.3 restent sous MIT. Code : https://github.com/CyberServices-ai/trieur-medias
