@@ -85,7 +85,7 @@
     try { if (localStorage.getItem(CLE_ASTUCE) === "1") return; } catch (e) {}
     var dlg = document.createElement("dialog"); dlg.className = "cs-cadre cs-astuce";
     dlg.innerHTML = '<div class="cs-cadre-barre"><span class="cs-cadre-nom">terminal</span><button type="button" class="cs-cadre-btn cs-cadre-fermer" aria-label="Fermer">×</button></div>' +
-      '<div class="cs-astuce-texte"><p>Tu n’es pas passé par le terminal ? Pas grave 🙂</p><p>Ouvert depuis le terminal du <a href="https://www.cyberservices-ai.com/">site</a> (touche ²), c’est plus sympa : une fenêtre à part, juste la bordure.</p>' +
+      '<div class="cs-astuce-texte"><p>Tu n’es pas passé par le terminal ? Dommage ;)</p>' +
       '<label><input type="checkbox"> Ne plus afficher</label></div>';
     document.body.appendChild(dlg);
     var coche = dlg.querySelector("input");
