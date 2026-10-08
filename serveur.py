@@ -149,6 +149,13 @@ class Trieur(BaseHTTPRequestHandler):
             return self.repondre(200, (PAGES / "index.html").read_bytes(), "text/html; charset=utf-8")
         if p in ("/app.js", "/style.css"):
             return self.repondre(200, (PAGES / p[1:]).read_bytes(), "text/javascript" if p.endswith(".js") else "text/css")
+        # Cadre-signature, police CS Coque et image de fond : fichiers statiques de pages/calque/, polices/ et images/, rien d'autre
+        if p.startswith(("/calque/", "/polices/", "/images/")):
+            f = (PAGES / p[1:]).resolve()
+            types = {".css": "text/css", ".js": "text/javascript", ".woff2": "font/woff2", ".webp": "image/webp", ".txt": "text/plain; charset=utf-8"}
+            if PAGES.resolve() in f.parents and f.is_file() and f.suffix in types:
+                return self.repondre(200, f.read_bytes(), types[f.suffix])
+            return self.repondre(404, {"error": "introuvable"})
         if p == "/api/raccourcis":
             return self.repondre(200, [{"nom": r, "chemin": str(Path(os.path.expanduser(r))), "existe": Path(os.path.expanduser(r)).is_dir()} for r in RACCOURCIS])
         if p == "/api/choisir":

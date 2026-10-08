@@ -1,0 +1,10 @@
+FONTLOG — CS Coque
+
+CS Coque est une version modifiée de Tektur (The Tektur Project Authors, https://www.github.com/hyvyys/Tektur),
+distribuée sous la SIL Open Font License 1.1 (voir LICENCE-cs-coque-OFL.txt).
+
+2026-10-08 — CyberServices
+- Instances statiques de Tektur à largeur 100 : graisses 400, 500, 600, 700.
+- Signature : une fine entaille en biais (coupe runique) à travers les capitales A, E, R (et leurs formes accentuées).
+- Noms changés : CS Coque ne se présente pas comme Tektur.
+- Sous-ensemble latin pour le web (woff2).

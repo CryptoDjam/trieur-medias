@@ -1,11 +1,11 @@
 {
   "name": "trieur-medias",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Local media sorter: scroll, tick, move to a folder, trash — a ComfyUI .json sidecar follows its image. Python stdlib + plain HTML, nothing to install. (Trieur de médias : page locale pour trier photos et fichiers.)",
   "author": "Cyril M",
   "license": "MIT",
   "repository": { "type": "git", "url": "git+https://github.com/CyberServices-ai/trieur-medias.git" },
-  "homepage": "https://github.com/CyberServices-ai/trieur-medias#readme",
+  "homepage": "https://www.cyberservices-ai.com/demos/trieur/",
   "bugs": { "url": "https://github.com/CyberServices-ai/trieur-medias/issues" },
   "bin": { "trieur-medias": "bin/trieur-medias.js" },
   "files": ["bin/", "pages/", "docs/architecture.html", "serveur.py", "choisir-dossier.py", "trieur-ouvrir.sh", "trieur-medias.service", "README.md", "LICENSE", "CHANGELOG.md"],

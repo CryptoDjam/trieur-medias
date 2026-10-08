@@ -1,5 +1,8 @@
 # Media Sorter (trieur-medias)
 
+**▶ Live demo: https://www.cyberservices-ai.com/demos/trieur/**  
+Website: https://www.cyberservices-ai.com
+
 A tiny **local web page to sort photos and files**: pick a folder, scroll full-size, tick, **move the selection to another folder** or to the **system trash**. Built for sorting image-generator output: an image's `.json` sidecar (ComfyUI settings) follows it everywhere.
 
 Python standard-library server (nothing to install), dependency-free HTML/JS page, GTK folder-picker dialog. Everything stays on your machine: the server listens on `127.0.0.1` only and never leaves your home directory.

@@ -1,0 +1,41 @@
+/* ════════════════════════════════════════════════════════════════════════════
+   SIGNATURE CYBERSERVICES — LE CADRE DE TOUS NOS OUTILS. NE JAMAIS LE MODIFIER.
+   Règle de Cyril (08/10/2026) : « si tu la changes, il n'y a plus de signature ».
+   Copie EXACTE de la fiche de tâche de la console des packs
+   (2026-10-08-interface/src/style.css : dialog#fiche-tache, .ft-barre, .mut, .btn ; police du body).
+   Seuls ajouts demandés par Cyril : les liens « site » et « github » (« dashboard » remplacé par « github » le 08/10/2026), du même style que le bouton fermer.
+   Toute modification de ce fichier change l'empreinte enregistrée dans le coffre : elle se voit.
+   ════════════════════════════════════════════════════════════════════════════ */
+@font-face{font-family:"USM";src:url(polices/ubuntu-sans-mono-var.woff2) format("woff2");font-weight:100 900}
+
+/* La fenêtre : liseré vert, fond, lueur (= dialog#fiche-tache) ; police du corps de la console */
+.cs-cadre{display:flex;flex-direction:column;padding:0;border:1px solid #3cf0b4;background:#04100b;color:#3cf0b4;box-shadow:0 0 0 1px #000,0 0 40px #3cf0b433;font:400 14px/1.5 "USM",ui-monospace,Consolas,monospace;overflow:hidden}
+
+/* La barre de titre (= .ft-barre) */
+.cs-cadre-barre{flex:none;display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-bottom:1px solid #1d8a5f;background:linear-gradient(90deg,#0b3a28,#04130d 70%);font-size:12px}
+
+/* Le nom de l'outil (= .mut) */
+.cs-cadre-nom{color:#5fa88a}
+
+/* Les boutons de droite : « site », « github », fermer (= .btn) */
+.cs-cadre-actions{display:flex;align-items:center;gap:6px}
+.cs-cadre-btn{font:inherit;font-size:11px;color:#3cf0b4;background:transparent;border:1px solid #0f5a3c;padding:2px 8px;cursor:pointer;text-decoration:none}
+.cs-cadre-btn:hover{background:#3cf0b4;color:#020604}
+
+/* ── Fonctionnement (n'affecte pas l'apparence de la signature) ── */
+.cs-cadre-corps{flex:1;min-height:0;overflow:auto}
+.cs-cadre-page{flex:1;min-height:0;width:100%;border:0;display:block}
+.cs-cadre-refus{margin:16px;color:#ffb454;font-size:13px}
+html.cs-fenetre,html.cs-fenetre body{margin:0;height:100%;background:#020604}
+html.cs-fenetre .cs-cadre{position:fixed;inset:0}
+dialog.cs-cadre{width:min(720px,calc(100vw - 24px));max-height:calc(100vh - 40px)}
+dialog.cs-cadre[open]{display:flex}
+dialog.cs-cadre:not([open]){display:none}
+dialog.cs-cadre::backdrop{background:#000a;backdrop-filter:blur(2px)}
+/* Petit mot « passe par le terminal » (même cadre, en petit) */
+dialog.cs-astuce{width:min(400px,calc(100vw - 24px))}
+.cs-astuce-texte{padding:14px 16px;font-size:13px;line-height:1.55}
+.cs-astuce-texte p{margin:0 0 10px}
+.cs-astuce-texte a{color:#3cf0b4}
+.cs-astuce-texte label{display:flex;align-items:center;gap:8px;margin-top:6px;color:#5fa88a;font-size:12px;cursor:pointer}
+.cs-astuce-texte input{accent-color:#3cf0b4}

@@ -1,5 +1,8 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trieur</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<!doctype html><html lang="fr" class="cs-fenetre" data-github="https://github.com/CyberServices-ai/trieur-medias"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trieur</title><link rel="stylesheet" href="/calque/cadre.css"><link rel="stylesheet" href="/style.css"><script src="/calque/cadre.js" defer></script><script src="/app.js" defer></script></head>
 <body>
+<div class="cs-cadre">
+<div class="cs-cadre-barre"><span class="cs-cadre-nom">trieur · médias</span><button type="button" class="cs-cadre-btn cs-cadre-fermer" aria-label="Fermer">×</button></div>
+<div class="cs-cadre-corps trieur">
 <header class="barre">
   <form id="form-dossier" class="dossier">
     <button type="button" id="parent" title="Dossier parent">↑</button>
@@ -33,5 +36,7 @@
     <p class="note">Les fichiers vont dans la corbeille du système (récupérables dans Fichiers → Corbeille). Le .json jumeau d'une image ComfyUI part avec.</p>
     <div class="boutons"><button type="button" id="confirm-non">Annuler</button><button type="button" id="confirm-oui" class="danger">Supprimer</button></div>
   </div>
+</div>
+</div>
 </div>
 </body></html>
